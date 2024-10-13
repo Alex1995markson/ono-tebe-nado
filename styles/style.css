@@ -1,1 +1,241 @@
-/* место для вашего кода */
+
+
+ /* @import url("normalize.css");  */
+ @import url("./fonts/fonts.css");
+
+/* --- header --- */
+
+.header {
+   padding: 92px 24px;
+   font-family: Raleway, sans-serif;;
+   font-size: 18px;
+   font-weight: 400;
+   color: black;
+   line-height: 24.3px; /* ? */
+   letter-spacing: 1%; /* ? */
+   
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid black TEST */
+}
+
+/* --- nav --- */
+.header__links-list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: circle;
+}
+
+.header__links-list-item {
+    margin-left: 30px;
+}
+
+.header__links-list-item:first {
+    margin-left: 0;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__link {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.header__link_active {
+    text-decoration: none;
+}
+
+/* --- logo --- */
+
+.header__logo {
+    margin-left: 40px;
+}
+
+.header__logo-image {
+    
+}
+
+
+/* --- address --- */
+
+.address {
+    margin-left: auto; 
+}
+
+.header__address {
+
+}
+
+
+
+/* --- section-cover --- */
+
+.cover {
+    position: relative;
+    height: 757px; 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* нужно затемнить изображение */
+}
+
+
+/* --- title --- */
+
+.cover__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 165px 50px 237px;
+    font-size: 100px;
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 115px;
+    letter-spacing: 0.3em;
+}
+
+.aligned-text {
+    align-self: flex-start;
+}
+
+.aligned-text_center {
+}
+
+.aligned-text_right {
+    align-self: flex-end;
+}
+
+.letter-spacing-extended {
+    /* ласс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
+}
+
+.no-letter-spacing {
+    /* ласс для обнуления общего межбуквенного расстояния для последней буквы */
+}
+
+/* --- footor (description) --- */
+
+.cover__description {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 22px;
+    bottom: 40px;
+    left: 5%;
+    right: 5%;
+
+}
+
+.cover__description-text {
+    color: white;
+    line-height: 28px;
+    word-spacing: 15px;
+    font-weight: normal;
+}
+
+.cover__footer-button {
+    /* padding: 10px 30px;
+    border: 1px solid white */
+}
+
+.transparent-button {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid white; 
+  font-size: 22px;
+  color: white; 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  text-transform: uppercase;
+
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* лёгкая заливка при наведении */
+  border-color: rgba(255, 255, 255, 1); /* делает рамку более насыщенной */
+  color: rgba(255, 255, 255, 1); /* делает текст полностью белым при наведении */
+}
+
+/* --- lots --- */
+
+.lots {
+    max-width: 1052px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.lots__heading {
+    text-transform: uppercase;
+    padding-left: 40px;
+    font-size: 47px;
+}
+
+.lots__card-list {
+    margin-top:27px;
+    display: flex;
+    justify-content: center;
+}
+
+.lots__card-list-item {
+    /* переделать */
+    width: 33%;
+    height: 570px;
+}
+
+.card-link {
+  /*  Зачем этот класс? */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.card_type_film {
+
+}
+
+.card_type_book {
+
+}
+
+.card_type_picture {
+
+}
+
+.card__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    /* margin: 51px 40px; */
+    align-self: flex-start;
+}
+
+.card__text {
+    /* margin: auto 40px 48px; */
+    align-self: flex-end;
+
+}
+
+.lots__look-more-link {
+    margin-left: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/*  */
+
