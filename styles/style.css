@@ -1,8 +1,4 @@
 
-
- /* @import url("normalize.css");  */
- @import url("./fonts/fonts.css");
-
 /* --- header --- */
 
 .header {
@@ -11,8 +7,8 @@
    font-size: 18px;
    font-weight: 400;
    color: black;
-   line-height: 24.3px; /* ? */
-   letter-spacing: 1%; /* ? */
+   line-height: 1.35em; /* 24.3/18 */
+   letter-spacing: normal;
    
 }
 
@@ -20,10 +16,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: 1px solid black TEST */
 }
 
 /* --- nav --- */
+
 .header__links-list {
     display: flex;
     justify-content: space-around;
@@ -57,21 +53,12 @@
     margin-left: 40px;
 }
 
-.header__logo-image {
-    
-}
-
-
 /* --- address --- */
 
-.address {
+.address__left {
+    padding-right: 50px;
     margin-left: auto; 
 }
-
-.header__address {
-
-}
-
 
 
 /* --- section-cover --- */
@@ -83,7 +70,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* нужно затемнить изображение */
 }
 
 
@@ -97,29 +83,26 @@
     padding: 165px 50px 237px;
     font-size: 100px;
     color: white;
-    font-size: 100px;
     font-weight: 700;
     line-height: 115px;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.10em;
 }
 
 .aligned-text {
     align-self: flex-start;
 }
 
-.aligned-text_center {
-}
-
 .aligned-text_right {
     align-self: flex-end;
 }
 
-.letter-spacing-extended {
-    /* ласс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
-}
+.letter-spacing-extended { /* ласс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
+    padding-left: 22px;
+} 
 
-.no-letter-spacing {
-    /* ласс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing { /* ласс для обнуления общего межбуквенного расстояния для последней буквы */
+    padding-left: 0;
+
 }
 
 /* --- footor (description) --- */
@@ -135,7 +118,6 @@
     bottom: 40px;
     left: 5%;
     right: 5%;
-
 }
 
 .cover__description-text {
@@ -146,8 +128,6 @@
 }
 
 .cover__footer-button {
-    /* padding: 10px 30px;
-    border: 1px solid white */
 }
 
 .transparent-button {
@@ -237,5 +217,58 @@
     text-decoration: underline;
 }
 
-/*  */
+/* --- about ---  */
+
+
+.about {
+    max-width: 1052px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 250px 280px;
+  justify-items: center;
+  /* align-items: center; /* вертикальное выравнивание текста */
+
+}
+
+.about__title {
+    justify-self: start; /* горизонтальное выравнивание для одного элемента */
+    align-self: center; 
+    
+}
+
+.about__column h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+    
+}
+
+.about__text p {
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+}
+
+
+/* --- footer --- */
+
+
+.footer {
+   padding: 92px 24px;
+   font-family: Raleway, sans-serif;;
+   font-size: 18px;
+   font-weight: 400;
+   color: black;
+   line-height: 24.3px; /* ? */
+   letter-spacing: 1%; /* ? */
+}
+
+.footer__container {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
 
