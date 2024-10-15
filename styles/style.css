@@ -137,9 +137,6 @@ body {
 }
 
 .cover__footer-button {
-}
-
-.transparent-button {
   box-sizing: border-box;
   background-color: transparent;
   border: 2px solid white; 
@@ -152,7 +149,7 @@ body {
 
 }
 
-.transparent-button:hover {
+.cover__footer-button:hover {
   background-color: rgba(255, 255, 255, 0.1); /* лёгкая заливка при наведении */
   border-color: rgba(255, 255, 255, 1); /* делает рамку более насыщенной */
   color: rgba(255, 255, 255, 1); /* делает текст полностью белым при наведении */
@@ -162,8 +159,7 @@ body {
 
 .lots {
     max-width: 1052px;
-    margin: 0 auto;
-    border: 1px solid black;
+    margin: 179px 24px 0;
 }
 
 .lots__heading {
@@ -176,52 +172,61 @@ body {
     margin-top:27px;
     display: flex;
     justify-content: center;
+    gap: 10px 24px;
 }
 
 .lots__card-list-item {
-    /* переделать */
     width: 33%;
     height: 570px;
-}
-
-.card-link {
-  /*  Зачем этот класс? */
 }
 
 .card {
   display: flex;
   flex-direction: column;
-
 }
 
 .card_type_film {
-
+    background-image: url('../images/card-lot-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card_type_book {
-
+    background-image: url('../images/card-lot-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card_type_picture {
-
+    background-image: url('../images/card-lot-03.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .card__title {
     font-size: 22px;
     text-transform: uppercase;
     text-decoration: underline;
-    /* margin: 51px 40px; */
+    text-align: center;
+    margin-top: 51px;
     align-self: flex-start;
+    flex-grow: 0;
 }
 
 .card__text {
-    /* margin: auto 40px 48px; */
+    text-align: center;
     align-self: flex-end;
+    flex-grow: 1;
+}
 
+.lots__look-more {
+    margin: 30px 40px auto;
 }
 
 .lots__look-more-link {
-    margin-left: 40px;
     text-align: center;
     text-decoration: underline;
 }
@@ -231,7 +236,7 @@ body {
 
 .about {
     max-width: 1052px;
-    margin: 0 auto;
+    margin: 179px 24px 0;
     border: 1px solid black;
 }
 
