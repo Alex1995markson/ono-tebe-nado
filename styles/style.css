@@ -1,4 +1,3 @@
-
 /* --- header --- */
 
 body {
@@ -10,8 +9,7 @@ body {
    padding: 92px 24px;
    color: black;
    line-height: 1.35em; /* 24.3/18 */
-   letter-spacing: normal;
-   
+   letter-spacing: normal; 
 }
 
 .header__container {
