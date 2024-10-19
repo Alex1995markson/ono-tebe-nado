@@ -1,15 +1,16 @@
 /* --- header --- */
 
 body {
-   font-size: 18px;
-   font-weight: 400;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .header {
-   padding: 92px 24px;
-   color: black;
-   line-height: 1.35em; /* 24.3/18 */
-   letter-spacing: normal; 
+    padding: 92px 24px;
+    color: black;
+    line-height: 1.35em;
+    /* 24.3/18 */
+    letter-spacing: normal;
 }
 
 .header__container {
@@ -61,7 +62,7 @@ body {
 
 .address__left {
     padding-right: 50px;
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 .header__address a {
@@ -73,7 +74,7 @@ body {
 
 .cover {
     position: relative;
-    height: 757px; 
+    height: 757px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,11 +105,13 @@ body {
     align-self: flex-end;
 }
 
-.letter-spacing-extended { /* ласс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
+.letter-spacing-extended {
+    /* ласс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
     padding-left: 22px;
-} 
+}
 
-.no-letter-spacing { /* ласс для обнуления общего межбуквенного расстояния для последней буквы */
+.no-letter-spacing {
+    /* ласс для обнуления общего межбуквенного расстояния для последней буквы */
     padding-left: 0;
 
 }
@@ -135,22 +138,25 @@ body {
 }
 
 .cover__footer-button {
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 2px solid white; 
-  font-size: 22px;
-  color: white; 
-  padding: 10px 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-  text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 2px solid white;
+    font-size: 22px;
+    color: white;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    text-transform: uppercase;
 
 }
 
 .cover__footer-button:hover {
-  background-color: rgba(255, 255, 255, 0.1); /* лёгкая заливка при наведении */
-  border-color: rgba(255, 255, 255, 1); /* делает рамку более насыщенной */
-  color: rgba(255, 255, 255, 1); /* делает текст полностью белым при наведении */
+    background-color: rgba(255, 255, 255, 0.1);
+    /* лёгкая заливка при наведении */
+    border-color: rgba(255, 255, 255, 1);
+    /* делает рамку более насыщенной */
+    color: rgba(255, 255, 255, 1);
+    /* делает текст полностью белым при наведении */
 }
 
 /* --- lots --- */
@@ -167,7 +173,7 @@ body {
 }
 
 .lots__card-list {
-    margin-top:27px;
+    margin-top: 27px;
     display: flex;
     justify-content: center;
     gap: 10px 24px;
@@ -179,8 +185,8 @@ body {
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .card_type_film {
@@ -239,29 +245,30 @@ body {
 }
 
 .about__column {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  grid-template-rows: 250px 280px;
-  justify-items: center;
-  /* align-items: center; /* вертикальное выравнивание текста */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 250px 280px;
+    justify-items: center;
+    /* align-items: center; /* вертикальное выравнивание текста */
 
 }
 
 .about__title {
-    justify-self: start; /* горизонтальное выравнивание для одного элемента */
-    align-self: center; 
-    
+    justify-self: start;
+    /* горизонтальное выравнивание для одного элемента */
+    align-self: center;
+
 }
 
 .about__column h3 {
     font-size: 40px;
     text-transform: uppercase;
-    
+
 }
 
 .about__text p {
-  word-wrap: break-word; 
-  overflow-wrap: break-word; 
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 
@@ -269,18 +276,20 @@ body {
 
 
 .footer {
-   padding: 92px 24px;
-   font-family: Raleway, sans-serif;;
-   font-size: 18px;
-   font-weight: 400;
-   color: black;
-   line-height: 24.3px; /* ? */
-   letter-spacing: 1%; /* ? */
+    padding: 92px 24px;
+    font-family: Raleway, sans-serif;
+    ;
+    font-size: 18px;
+    font-weight: 400;
+    color: black;
+    line-height: 24.3px;
+    /* ? */
+    letter-spacing: 1%;
+    /* ? */
 }
 
 .footer__container {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-
