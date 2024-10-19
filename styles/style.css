@@ -54,6 +54,11 @@ body {
     margin-left: 40px;
 }
 
+.header__logo-image {
+    width: 148px;
+    height: 105px;
+}
+
 /* --- address --- */
 
 .address {
