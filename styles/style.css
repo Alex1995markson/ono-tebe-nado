@@ -256,24 +256,22 @@ body {
 .about__column {
     display: grid;
     grid-template-columns: 34% 66%;
-    grid-template-rows: 255px 280px;
+    grid-template-rows: 250px 280px;
     justify-items: center;
 }
 
 .about__title {
     justify-self: start;
-    /* горизонтальное выравнивание для одного элемента */
     align-self: center;
-
 }
 
 .about__column h3 {
     font-size: 40px;
     text-transform: uppercase;
-
 }
 
 .about__text p {
+    font-size: 20px;
     word-wrap: break-word;
     overflow-wrap: break-word;
 }
