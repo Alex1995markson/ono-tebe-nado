@@ -247,16 +247,17 @@ body {
 .about {
     max-width: 1052px;
     margin: 179px 24px 0;
-    border: 1px solid black;
+}
+
+.about__logo {
+    margin-right: 35px;
 }
 
 .about__column {
     display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 250px 280px;
+    grid-template-columns: 34% 66%;
+    grid-template-rows: 255px 280px;
     justify-items: center;
-    /* align-items: center; /* вертикальное выравнивание текста */
-
 }
 
 .about__title {
