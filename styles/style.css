@@ -283,7 +283,7 @@ body {
 
 .footer {
     margin: 180px 24px 0;
-    padding: 22px 24px;
+    padding: 30px 24px;
     font-size: 18px;
     font-weight: 400;
     color: black;
@@ -292,12 +292,9 @@ body {
 .footer__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.footer__address {
-    padding-top: 15px;
-}
 
 .footer__menu {
     text-decoration: none;
@@ -308,7 +305,6 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    margin-right: 30px;
     list-style: none;
 }
 
@@ -320,12 +316,17 @@ body {
 
 .footer__social-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
+    width: 240px;
 }
 
-.footer__social-icon {
+.footer__social-list-item {
     width: 48px;
     height: 48px;
-    margin-right: 35px;
+    text-align: center;
+}
+
+.footer__social-list:last-child {
+    margin-right: 0;
 }
