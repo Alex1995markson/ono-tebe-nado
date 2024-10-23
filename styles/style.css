@@ -263,6 +263,15 @@ body {
     justify-items: center;
 }
 
+.about__logo {
+    width: 240px;
+    height: 240px;
+    background-color: black;
+
+}
+
+.about_header__logo {}
+
 .about__title {
     justify-self: start;
     align-self: center;
