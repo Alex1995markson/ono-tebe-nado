@@ -252,10 +252,6 @@ body {
     margin: 179px 24px 0;
 }
 
-.about__logo {
-    margin-right: 35px;
-}
-
 .about__column {
     display: grid;
     grid-template-columns: 34% 66%;
@@ -265,6 +261,7 @@ body {
 
 .about__logo {
     /* выровнять по центру изображение */
+    margin-right: 35px;
     width: 240px;
     height: 240px;
     background-color: black;
