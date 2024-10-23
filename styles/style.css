@@ -37,6 +37,7 @@ body {
 .header__link {
     text-align: center;
     text-decoration: underline;
+    text-underline-offset: 2px
 }
 
 .header__link_active {
@@ -93,7 +94,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 165px 50px 237px;
-    font-size: 90px;
+    font-size: 87px;
     color: white;
     font-weight: 700;
     letter-spacing: 0.12em;
@@ -101,6 +102,16 @@ body {
 
 .aligned-text {
     align-self: flex-start;
+    letter-spacing: 0.25em;
+}
+
+.aligned-text_center {
+    letter-spacing: 0.4em;
+}
+
+.letter-spacing-extended__center {
+    margin-left: 20px;
+    letter-spacing: 0.4em;
 }
 
 .aligned-text_right {
@@ -109,7 +120,7 @@ body {
 
 .letter-spacing-extended {
     /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
-    padding-left: 22px;
+    padding-left: 40px;
     letter-spacing: 0.25em;
 }
 
@@ -128,7 +139,7 @@ body {
     justify-content: space-between;
     align-items: baseline;
     text-transform: uppercase;
-    bottom: 55px;
+    bottom: 54px;
     left: 78px;
     right: 50px;
 }
@@ -145,7 +156,7 @@ body {
     border: 2px solid white;
     font-size: 22px;
     color: white;
-    padding: 10px 30px;
+    padding: 11px 31px;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
     text-transform: uppercase;
@@ -154,11 +165,8 @@ body {
 
 .cover__footer-button:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    /* лёгкая заливка при наведении */
     border-color: rgba(255, 255, 255, 1);
-    /* делает рамку более насыщенной */
     color: rgba(255, 255, 255, 1);
-    /* делает текст полностью белым при наведении */
 }
 
 /* --- lots --- */
@@ -234,6 +242,7 @@ body {
 .lots__look-more-link {
     font-size: 20px;
     text-align: center;
+    text-underline-offset: 2px;
     text-decoration: underline;
 }
 
