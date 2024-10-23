@@ -119,13 +119,11 @@ body {
 }
 
 .letter-spacing-extended {
-    /* класс для управления межбуквенным расстоянием в местах, где есть эти акценты; */
     padding-left: 40px;
     letter-spacing: 0.25em;
 }
 
 .no-letter-spacing {
-    /* класс для обнуления общего межбуквенного расстояния для последней буквы */
     padding-left: 0;
 
 }
@@ -203,21 +201,21 @@ body {
 }
 
 .card_type_film {
-    background-image: url('../images/card-lot-01.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-01.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .card_type_book {
-    background-image: url('../images/card-lot-02.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-02.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .card_type_picture {
-    background-image: url('../images/card-lot-03.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-03.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
