@@ -264,13 +264,24 @@ body {
 }
 
 .about__logo {
+    /* выровнять по центру изображение */
     width: 240px;
     height: 240px;
     background-color: black;
+    border-radius: 50%;
+    overflow: hidden;
+    /* Это необходимо, чтобы изображение не выходило за границы круга */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.about_header__logo {}
+.about_header__logo {
+    text-align: center;
+    width: 140px;
+    height: 140px;
+}
 
 .about__title {
     justify-self: start;
