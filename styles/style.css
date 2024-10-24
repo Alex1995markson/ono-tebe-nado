@@ -1,12 +1,12 @@
-/* --- header --- */
-
 body {
     font-size: 18px;
     font-weight: 400;
 }
 
+/* --- header --- */
+
 .header {
-    margin: 92px 24px 92px;
+    padding: 97px 24px 90px;
     color: black;
     line-height: 24.3px;
     display: flex;
@@ -20,6 +20,7 @@ body {
     display: flex;
     justify-content: space-around;
     list-style-type: circle;
+    text-underline-offset: 4px;
 }
 
 .header__links-list-item {
@@ -37,7 +38,6 @@ body {
 .header__link {
     text-align: center;
     text-decoration: underline;
-    text-underline-offset: 2px
 }
 
 .header__link_active {
@@ -79,7 +79,7 @@ body {
 .cover {
     position: relative;
     height: 757px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/cover.jpg');
+    background-image: url('../images/cover.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -89,57 +89,55 @@ body {
 /* --- title --- */
 
 .cover__title {
+    padding: 165px 50px 137px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 165px 50px 237px;
-    font-size: 87px;
+    row-gap: 20px;
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 30px;
+    text-transform: uppercase;
     color: white;
-    font-weight: 700;
-    letter-spacing: 0.12em;
 }
 
 .aligned-text {
-    align-self: flex-start;
-    letter-spacing: 0.25em;
+    display: block;
 }
 
 .aligned-text_center {
-    letter-spacing: 0.4em;
-}
-
-.letter-spacing-extended__center {
-    margin-left: 20px;
-    letter-spacing: 0.4em;
+    text-align: center;
 }
 
 .aligned-text_right {
-    align-self: flex-end;
+    text-align: end;
+}
+
+.line-hight-high {
+    line-height: 1.15;
+}
+
+.line-hight-low {
+    line-height: 1;
 }
 
 .letter-spacing-extended {
-    padding-left: 40px;
-    letter-spacing: 0.25em;
+    letter-spacing: 60px;
 }
 
 .no-letter-spacing {
-    padding-left: 0;
-
+    letter-spacing: normal;
 }
 
 /* --- footor (description) --- */
 
 .cover__description {
     font-size: 22px;
-    position: absolute;
+    margin: 0 50px auto 78px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     text-transform: uppercase;
-    bottom: 54px;
-    left: 78px;
-    right: 50px;
+
 }
 
 .cover__description-text {
@@ -170,8 +168,8 @@ body {
 /* --- lots --- */
 
 .lots {
-    max-width: 1052px;
-    margin: 179px 24px 0;
+    min-width: 1052px;
+    margin: 182px 24px 0;
 }
 
 .lots__heading {
@@ -185,40 +183,33 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px 24px;
+    flex-wrap: wrap;
 }
 
 .lots__card-list-item {
-    width: 33.3%;
-    height: 563px;
+    max-width: 334px;
+    min-height: 563px;
+    padding: 51px 40px 48px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    height: 464px;
-    margin: 51px 40px 48px;
+    min-height: 464px;
     color: white;
 }
 
 .card_type_film {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-01.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('../images/card-lot-01.jpg');
+
 }
 
 .card_type_book {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-02.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('../images/card-lot-02.jpg');
 }
 
 .card_type_picture {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/card-lot-03.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-image: url('../images/card-lot-03.jpg');
 }
 
 .card__title {
@@ -233,14 +224,13 @@ body {
     line-height: 1.2em;
 }
 
-.lots__look-more {
-    margin: 30px 40px auto;
-}
 
 .lots__look-more-link {
+    display: block;
+    margin: 30px 40px auto;
     font-size: 20px;
-    text-align: center;
-    text-underline-offset: 2px;
+    text-align: left;
+    text-underline-offset: 4px;
     text-decoration: underline;
 }
 
@@ -249,28 +239,26 @@ body {
 
 .about {
     max-width: 1052px;
-    margin: 179px 24px 0;
+    margin: 182px 24px 0;
 }
 
 .about__column {
     display: grid;
-    grid-template-columns: 34% 66%;
-    grid-template-rows: 250px 280px;
+    grid-template-columns: 32% 68%;
     justify-items: center;
+    grid-gap: 24px;
 }
 
 .about__logo {
-    /* выровнять по центру изображение */
-    margin-right: 35px;
     width: 240px;
     height: 240px;
     background-color: black;
     border-radius: 50%;
     overflow: hidden;
-    /* Это необходимо, чтобы изображение не выходило за границы круга */
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
 
 }
 
@@ -280,21 +268,28 @@ body {
     height: 140px;
 }
 
-.about__title {
+.about__description {
     justify-self: start;
     align-self: center;
 }
 
-.about__column h3 {
+.about__title {
+    margin-top: 104px;
     font-size: 40px;
     text-transform: uppercase;
 }
 
+.about__text {
+    margin-top: 99px;
+    min-width: 688px;
+}
+
 .about__text p {
     font-size: 20px;
-    line-height: 1.2em;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    font-weight: 400;
+    line-height: 24.3px;
+    letter-spacing: 0.019em;
+    text-align: left;
 }
 
 
@@ -302,7 +297,7 @@ body {
 
 
 .footer {
-    margin: 180px 24px 0;
+    margin: 150px 24px 0;
     padding: 30px 24px;
     font-size: 18px;
     font-weight: 400;
@@ -326,19 +321,14 @@ body {
     justify-content: center;
     text-align: center;
     list-style: none;
+    margin-left: 30px;
 }
-
-/* .footer__menu-link_active {}
-
-.footer__menu-list-item {}
-
-.footer__menu-link_active {} */
 
 .footer__social-list {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    width: 240px;
+    min-width: 240px;
 }
 
 .footer__social-list-item {
@@ -349,4 +339,14 @@ body {
 
 .footer__social-list:last-child {
     margin-right: 0;
+}
+
+.filter-darken {
+    filter: brightness(0.5);
+}
+
+.bg-noreat-cover-center {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
